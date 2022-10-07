@@ -3,3 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    color: black;
+    background-color: aqua;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar-items a {
+    text-decoration: none;
+}
