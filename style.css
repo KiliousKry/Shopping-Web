@@ -1,21 +1,76 @@
-*{
+* , ::before, ::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+/*Header*/
+
 .main-header {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
-    align-items: center ;
-    color: black;
-    background-color: aqua;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgb(5, 4, 4);
+    height: 60px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1111;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);;
+}   
+
+.main-header a {
+    font-weight: 100;
+    color: #a0a0a0;
+    font-family: 'Poppins', sans-serif;
 }
 
-ul {
+.main-header-logo a {
+    text-decoration: none;
+    font-weight: 800 !important;
+    color: #f1f1f1 !important;
+}
+
+.navbar .subnav {
+    display: none;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-items li {
+    padding: 0 30px;
     list-style: none;
 }
 
 .navbar-items a {
+    position: relative;
     text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.navbar-items a::after {
+    position: absolute;
+    content: "";
+    background-color: #ff3c78; 
+    height: 3px;
+    width: 0;
+    left: 0; 
+    bottom: -6px;
+    transition: 0.6s ease;
+}
+
+.navbar-items a:hover {
+    color: #f1f1f1;
+}
+
+.navbar-items a:hover::after{
+    width: 100%;
 }
