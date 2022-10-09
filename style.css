@@ -18,7 +18,7 @@
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1111;
+    top: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);;
 }   
 
@@ -34,8 +34,9 @@
     color: #f1f1f1 !important;
 }
 
-.navbar .subnav {
+.subnav-items {
     display: none;
+    
 }
 
 .navbar-items {
@@ -73,4 +74,36 @@
 
 .navbar-items a:hover::after{
     width: 100%;
+}
+
+.timkiem {
+    margin-top: 70px; 
+    background-color: rgb(12, 78, 219);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    float: right;
+    margin-right: 20px;
+}
+
+.timkiem a {
+    color: #ffffff !important;
+}
+
+.timkiem:hover {
+    cursor: pointer;
+    background-color: rgba(35, 137, 221, 0.9);
+}
+
+.title  {
+    margin-top: 100px;
+    color: rgb(54, 49, 49);
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    letter-spacing: 3px;
+    text-shadow: red -1px 0, cyan 1px 0;
 }
