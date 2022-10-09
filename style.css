@@ -5,105 +5,98 @@
 }
 
 
+header a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+}
+
 /*Header*/
 
-.main-header {
-    overflow: hidden;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
     background-color: rgb(5, 4, 4);
-    height: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     position: fixed;
     right: 0;
     left: 0;
-    top: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);;
-}   
-
-.main-header a {
-    font-weight: 100;
-    color: #a0a0a0;
-    font-family: 'Poppins', sans-serif;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
 }
 
-.main-header-logo a {
-    text-decoration: none;
-    font-weight: 800 !important;
+.logo {
+    cursor: pointer;
     color: #f1f1f1 !important;
+    font-weight: 800 !important;
+    font-size: 24px;
 }
 
-.subnav-items {
-    display: none;
-    
-}
-
-.navbar-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar-items li {
-    padding: 0 30px;
-    list-style: none;
-}
-
-.navbar-items a {
+.nav-items li{
     position: relative;
-    text-decoration: none;
-    font-size: 16px;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.nav-items a {
+    position: relative;
     letter-spacing: 0.5px;
+    font-size: 16px;
 }
 
-.navbar-items a::after {
-    position: absolute;
+
+.nav-items a::after {
     content: "";
-    background-color: #ff3c78; 
-    height: 3px;
+    position: absolute;
     width: 0;
-    left: 0; 
+    height: 3px;
+    background-color: #ff3c78;
     bottom: -6px;
-    transition: 0.6s ease;
+    left: 0;
+    transition: all 0.7s ease;
 }
 
-.navbar-items a:hover {
+.nav-items a:hover {
     color: #f1f1f1;
 }
 
-.navbar-items a:hover::after{
+.nav-items a:hover::after {
     width: 100%;
 }
 
-.timkiem {
-    margin-top: 70px; 
-    background-color: rgb(12, 78, 219);
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    float: right;
-    margin-right: 20px;
-}
-
-.timkiem a {
-    color: #ffffff !important;
-}
-
-.timkiem:hover {
+.search button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #52cceb;
+    color: black;
     cursor: pointer;
-    background-color: rgba(35, 137, 221, 0.9);
 }
 
-.title  {
-    margin-top: 100px;
-    color: rgb(54, 49, 49);
-    font-size: 3rem;
-    font-weight: 900;
-    font-family: 'Montserrat';
-    letter-spacing: 3px;
-    text-shadow: red -1px 0, cyan 1px 0;
+.search button:hover {
+    background-color: rgb(67, 235, 247);
+}
+
+.nav-items-dropdown__menu{
+    display: none;
+}
+
+.nav ul li:hover .nav-items-dropdown__menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(5, 4, 4);
+    left: 0;
+    top: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.nav ul li:hover .nav-items-dropdown__menu ul {
+    display: block;
+    margin: 12px;
+}
+
+.nav ul li:hover .nav-items-dropdown__menu ul li {
+    padding: 12px;
 }

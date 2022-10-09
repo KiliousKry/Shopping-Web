@@ -5,36 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type='text/css'>
     <title>Shopping</title>
 </head>
 <body>
     <div class="main">
-        <div class="main-header">
-            <div class="main-header-logo">
-                <h1><a href="#">Logo</a></h1>
-            </div>
-            <div class="navbar">
-                <ul class="navbar-items">
-                    <li><a href="" class="active">Trang chủ</a></li>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <nav class="nav" id="navactive">
+                <ul class="nav-items">
+                    <li><a href="">Trang chủ</a></li>
                     <li><a href="">Đang sale</a></li>
                     <li>
-                        <a href="">Sản phẩm</a>
-                        <ul class="subnav-items">
-                            <li><a href="">Quần áo</a></li>
-                            <li><a href="">Giày dép</a></li>
-                            <li><a href="">Đồ điện tử</a></li>
-                        </ul>
+                        <a href="">Sản phẩm <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+
+                        <div class="nav-items-dropdown__menu">
+                            <ul>
+                                <li><a href="">Quần áo</a></li>
+                                <li><a href="">Mỹ phẩm</a></li>
+                                <li><a href="">Điện thoại</a></li>
+                            </ul>
+                        </div>
+
                     </li>
                     <li><a href="">Giỏ hàng</a></li>
-                    <li><a href="">Hỗ trợ</a></li>
+                    <li>
+                        <a href="">Hỗ trợ <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+
+                        <div class="nav-items-dropdown__menu">
+                            <ul>
+                                <li><a href="">Test 1</a></li>
+                                <li><a href="">Test 2</a></li>
+                                <li><a href="">Test 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
-            </div>
-        </div>
-        <div class="timkiem">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-        <!--<h1 class="title">Chào mừng bạn tới Shop online!</h1>-->
+            </nav>
+            <a href="" class="search"><button><i class="fa fa-magnifying-glass"></i></button></a>
+        </header>
     </div>
+
 </body>
 </html>
